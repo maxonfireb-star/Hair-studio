@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hair Studio | Premium Family Salon & Bridal Lounge</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --gold: #c9a86a;
+            --cream: #f8f5ef;
+            --text: #2d2d2d;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--cream);
+            color: var(--text);
+            scroll-behavior: smooth;
+        }
+        .font-luxury { font-family: 'Cinzel', serif; }
+        .glass-nav {
+            background: rgba(255,255,255,0.7);
+            backdrop-filter: blur(18px);
+            border-bottom: 1px solid rgba(201,168,106,0.2);
+        }
+        .glass-card {
+            background: rgba(255,255,255,0.75);
+            backdrop-filter: blur(18px);
+            border: 1px solid rgba(201,168,106,0.18);
+            transition: 0.4s ease;
+        }
+        .gold-gradient-text {
+            background: linear-gradient(to right, #b68b45, #e2c792, #b68b45);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="fixed w-full z-50 glass-nav px-8 py-5 flex justify-between items-center">
+        <div class="flex flex-col">
+            <span class="font-luxury text-2xl tracking-[0.3em] text-[#b68b45]">HAIR STUDIO</span>
+            <span class="text-[0.6rem] tracking-[0.5em] text-gray-500 uppercase">Premium Family Salon</span>
+        </div>
+        <div class="flex items-center gap-4">
+            <a href="https://www.instagram.com/hair_studio_thefamily_salon" target="_blank" class="hidden md:block">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" class="w-5 h-5 opacity-70 hover:opacity-100 transition" alt="Instagram">
+            </a>
+            <a href="https://wa.me/919171748888" class="bg-[#b68b45] text-white px-6 py-2 rounded-full font-bold text-xs uppercase hover:scale-105 transition-all">Book Now</a>
+        </div>
+    </header>
+
+    <section class="relative h-[65vh] flex items-end justify-center text-center overflow-hidden">
+        <div class="absolute inset-0">
+            <div class="absolute inset-0 bg-gradient-to-t from-[#f8f5ef] via-transparent to-transparent z-10"></div>
+            <img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&q=80&w=1920" class="w-full h-full object-cover" alt="Salon Chair">
+        </div>
+        <div class="relative z-20 px-4 pb-8">
+            <h2 class="font-luxury text-5xl md:text-7xl mb-2 gold-gradient-text">Excellence Redefined</h2>
+            <p class="text-gray-600 tracking-widest uppercase text-xs">The most exclusive grooming destination in Erode</p>
+        </div>
+    </section>
+
+    <section id="services" class="pt-8 pb-16 px-6 max-w-7xl mx-auto">
+        <div class="text-center mb-10">
+            <h3 class="font-luxury text-3xl mb-3">Comprehensive Care Menu</h3>
+            <p class="max-w-2xl mx-auto text-gray-500 text-sm leading-relaxed">Signature haircuts, luxury facials, and elite grooming experiences.</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6">
+            <div class="glass-card p-8 rounded-[2rem] shadow-sm">
+                <h4 class="font-luxury text-xl mb-6 border-b pb-2 text-[#b68b45]">Gents Lounge</h4>
+                <ul class="space-y-4 text-sm text-gray-700">
+                    <li class="flex justify-between"><span>Haircut</span><span>₹100+</span></li>
+                    <li class="flex justify-between"><span>Beard Trim</span><span>₹59+</span></li>
+                    <li class="flex justify-between"><span>Facial</span><span>₹499+</span></li>
+                    <li class="flex justify-between"><span>Hair Spa</span><span>₹699+</span></li>
+                </ul>
+            </div>
+            <div class="glass-card p-8 rounded-[2rem] shadow-sm">
+                <h4 class="font-luxury text-xl mb-6 border-b pb-2 text-[#b68b45]">Ladies Studio</h4>
+                <ul class="space-y-4 text-sm text-gray-700">
+                    <li class="flex justify-between"><span>Layer Cut</span><span>₹499+</span></li>
+                    <li class="flex justify-between"><span>Keratin</span><span>₹2999+</span></li>
+                    <li class="flex justify-between"><span>Coloring</span><span>₹1999+</span></li>
+                    <li class="flex justify-between"><span>Smoothening</span><span>₹3499+</span></li>
+                </ul>
+            </div>
+            <div class="glass-card p-8 rounded-[2rem] shadow-sm">
+                <h4 class="font-luxury text-xl mb-6 border-b pb-2 text-[#b68b45]">Skin & Nails</h4>
+                <ul class="space-y-4 text-sm text-gray-700">
+                    <li class="flex justify-between"><span>Hydra Facial</span><span>₹1499+</span></li>
+                    <li class="flex justify-between"><span>Pedicure</span><span>₹799+</span></li>
+                    <li class="flex justify-between"><span>Manicure</span><span>₹699+</span></li>
+                    <li class="flex justify-between"><span>Nail Art</span><span>₹1999+</span></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="reviews" class="py-16 bg-white/30 px-6">
+        <div class="max-w-5xl mx-auto">
+            <h3 class="font-luxury text-center text-2xl mb-12 uppercase tracking-widest text-gray-400 italic">Client Experiences</h3>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white/50 p-8 rounded-3xl border border-[#c9a86a]/20 italic text-gray-600 relative">
+                    <span class="text-4xl absolute -top-4 -left-2 text-[#c9a86a] opacity-30">"</span>
+                    <p class="relative z-10">Service is so good... customer is too friendly... ambience is good... price is reasonable.</p>
+                    <cite class="block mt-4 text-[#b68b45] not-italic font-bold text-xs">— Sakthi Vel</cite>
+                </div>
+                <div class="bg-white/50 p-8 rounded-3xl border border-[#c9a86a]/20 italic text-gray-600 relative">
+                    <span class="text-4xl absolute -top-4 -left-2 text-[#c9a86a] opacity-30">"</span>
+                    <p class="relative z-10">Really satisfying and felt very relaxed with the service and very friendly staffs.</p>
+                    <cite class="block mt-4 text-[#b68b45] not-italic font-bold text-xs">— Varsha</cite>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pt-16 pb-8 px-6 max-w-7xl mx-auto">
+        <div class="rounded-[2.5rem] overflow-hidden h-72 shadow-inner bg-gray-200 mb-12">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3912.186835261899!2d77.71216527587422!3d11.321034448924043!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba96f2648790515%3A0xc39589e47cc7766!2sHair%20Studio%20The%20Family%20Salon!5e0!3m2!1sen!2sin!4v1715690000000" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+
+        <div class="flex flex-col md:flex-row justify-between items-center gap-6 border-t border-gray-200 pt-8">
+            <div class="flex gap-6">
+                <a href="https://www.instagram.com/hair_studio_thefamily_salon" target="_blank" class="text-gray-400 hover:text-[#b68b45] transition text-[10px] uppercase tracking-widest font-bold">Instagram</a>
+                <a href="https://wa.me/919171748888" class="text-gray-400 hover:text-green-600 transition text-[10px] uppercase tracking-widest font-bold">WhatsApp</a>
+            </div>
+            <p class="text-gray-400 text-[10px] uppercase tracking-widest">© 2026 Hair Studio Erode. Near Carmel School.</p>
+        </div>
+    </section>
+
+</body>
+                                                                     </html>
